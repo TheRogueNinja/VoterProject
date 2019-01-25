@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vote for them</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<div class="row">
+		 <div class="column">
+		 	<img src="animals.jpg" alt="Animal Image">
+		 	Red
+		 </div>
+		 <div class="column">
+		 	Animal2
+		 	Red2
+		 	Red2
+		 </div>
+		 <div class="column">
+		 	Animal3
+		 	Red3
+		 	Red2
+		 	Red2
+		 	Red2
+		 </div>
+		 <div class="column">
+		 	Animal4
+		 	Red4
+		 	Red2
+		 </div>
+		 <button onclick="funcOne()">1</button>
+		 <button onclick="funcTwo()">2</button>
+		 <button onclick="funcFour()">4</button>
+	</div>
+</body>
+<script type="text/javascript">
+	var samp = document.getElementsByClassName("column");
+	
+	function funcOne(){
+		for(var i=0;i<samp.length;i++){
+		samp[i].style.flex = "100%";
+		}
+	}
+	function funcTwo(){
+		for(var i=0;i<samp.length;i++){
+		samp[i].style.flex = "50%";
+		}
+	}
+	function funcFour(){
+		for(var i=0;i<samp.length;i++){
+		samp[i].style.flex = "25%";
+		}
+	}
+</script>
+</html>
