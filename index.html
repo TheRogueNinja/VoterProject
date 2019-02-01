@@ -2,53 +2,19 @@
 <html>
 <head>
 	<title>Vote for them</title>
-</head>
-<body>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<div class="row">
-		 <div class="column">
-		 	<img src="animals.jpg" alt="Animal Image">
-		 	Red
-		 </div>
-		 <div class="column">
-		 	Animal2
-		 	Red2
-		 	Red2
-		 </div>
-		 <div class="column">
-		 	Animal3
-		 	Red3
-		 	Red2
-		 	Red2
-		 	Red2
-		 </div>
-		 <div class="column">
-		 	Animal4
-		 	Red4
-		 	Red2
-		 </div>
-		 <button onclick="funcOne()">1</button>
-		 <button onclick="funcTwo()">2</button>
-		 <button onclick="funcFour()">4</button>
-	</div>
+</head>
+<body class="text-center">
+	<form class="form-signin">
+		<img class="mb-4" src="ballot-box.jpg" width="100" height="90">
+		<h1>Sign in to Vote</h1>
+		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+		<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+		<button class="btn-primary btn-block btn-lg">Sign In </button>
+		<hr>
+		<H1>OR</H1>
+		
+	</form>
 </body>
-<script type="text/javascript">
-	var samp = document.getElementsByClassName("column");
-	
-	function funcOne(){
-		for(var i=0;i<samp.length;i++){
-		samp[i].style.flex = "100%";
-		}
-	}
-	function funcTwo(){
-		for(var i=0;i<samp.length;i++){
-		samp[i].style.flex = "50%";
-		}
-	}
-	function funcFour(){
-		for(var i=0;i<samp.length;i++){
-		samp[i].style.flex = "25%";
-		}
-	}
-</script>
 </html>
